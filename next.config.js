@@ -66,7 +66,7 @@ module.exports = withBundleAnalyzer({
   async headers() {
     return [
       {
-        source: '/(.*)',
+        source: '/:path*',
         headers: securityHeaders,
       },
     ]
