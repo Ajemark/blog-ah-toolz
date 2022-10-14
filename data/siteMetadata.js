@@ -1,6 +1,6 @@
 const siteMetadata = {
   title: 'Ajemark Hub Tools',
-  author: 'Ajemark Hub Team',
+  author: 'AjemarkHubTeam',
   headerTitle: 'AH Tools',
   description: 'AH-Toolz.com ~ The Home Of Free Online Tools For You!',
   blogDescription: 'AH-Toolz.com ~ The Home Of Free Online Tools For You!',
@@ -31,7 +31,7 @@ const siteMetadata = {
   newsletter: {
     // supports mailchimp, buttondown, convertkit, klaviyo, revue, emailoctopus
     // Please add your .env file and modify it according to your selection
-    provider: 'klaviyo',
+    provider: 'mailchimp',
   },
   comment: {
     // If you want to use a commenting system other than giscus you have to add it to the

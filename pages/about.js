@@ -6,7 +6,7 @@ const DEFAULT_LAYOUT = 'AuthorLayout'
 const author = siteMetadata.author
 
 export async function getStaticProps() {
-  const authorDetails = await getFileBySlug('authors', [author])
+  const authorDetails = await getFileBySlug('authors', ['default'])
   return { props: { authorDetails } }
 }
 
