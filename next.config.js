@@ -12,8 +12,7 @@ const ContentSecurityPolicy =
   media-src 'none';
   connect-src *;
   font-src 'self';
-  frame-src *.disqus.com/embed.js
-`
+  frame-src *.disqus.com/embed.js`
 
 const securityHeaders = [
   // https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP
