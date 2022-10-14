@@ -7,11 +7,12 @@ const ContentSecurityPolicy =
   `default-src 'self'; 
   script-src 'self' 'unsafe-eval' 'unsafe-inline' https://blog-ah-toolz-com.disqus.com/embed.js;
   style-src 'self' 'unsafe-inline';
+  prefetch-src 'self' https://c.disquscdn.com https://disqus.com
   img-src * blob: data:;
   media-src 'none';
   connect-src *;
   font-src 'self';
-  frame-src https://blog-ah-toolz-com.disqus.com/embed.js`
+  frame-src https://disqus.com`
 
 const securityHeaders = [
   // https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP
