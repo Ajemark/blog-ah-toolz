@@ -19,7 +19,7 @@ class MyDocument extends Document {
           />
           <link rel="manifest" href="/static/favicons/site.webmanifest" />
           <link rel="mask-icon" href="/static/favicons/safari-pinned-tab.svg" color="#5bbad5" />
-          <meta httpEquiv='Content-Security-Policy' content="script-src 'self' 'unsafe-eval' 'unsafe-inline' https://ah-toolz-com.disqus.com/embed.js" />
+          <meta httpEquiv='Content-Security-Policy' content="script-src 'self' 'unsafe-eval' 'unsafe-inline' *disqus.com/embed.js" />
       
           <meta name="msapplication-TileColor" content="#000000" />
           <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fff" />
