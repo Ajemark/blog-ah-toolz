@@ -5,9 +5,9 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 // You might need to insert additional domains in script-src if you are using external services
 const ContentSecurityPolicy =
   `default-src 'self'; 
-  script-src 'self' 'unsafe-eval' 'unsafe-inline' https://c.disquscdn.com https://blog-ah-toolz-com.disqus.com/embed.js;
-  style-src 'self' 'unsafe-inline';
-  prefetch-src 'self' https://c.disquscdn.com https://disqus.com
+  script-src 'self' 'unsafe-eval' 'unsafe-inline' https://ats.rlcdn.com ttps://c.disquscdn.com https://blog-ah-toolz-com.disqus.com/embed.js;
+  style-src 'self' 'unsafe-inline' https://c.disquscdn.com;
+  prefetch-src 'self' https://c.disquscdn.com https://disqus.com;
   img-src data:image;
   media-src 'none';
   connect-src *;
