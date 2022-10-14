@@ -15,6 +15,7 @@ const ToolCard = ({ text, src, href }) => {
                         <p className="text-align-center  text-lg dark:text-gray-400 px-4 w-full ">
                             {text}
                         </p>
+
                     </div>
                 </Link>
             </div>

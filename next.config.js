@@ -3,22 +3,29 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 })
 
 // You might need to insert additional domains in script-src if you are using external services
-const ContentSecurityPolicy = `
-  default-src 'self';
-  script-src 'self' 'unsafe-eval' 'unsafe-inline' giscus.app;
-  style-src 'self' 'unsafe-inline';
-  img-src * blob: data:;
+const ContentSecurityPolicy =
+  `default-src 'self'; 
+  script-src 'self' 'unsafe-eval' 'unsafe-inline' https://ats.rlcdn.com https://c.disquscdn.com  https://blog-ah-toolz-com.disqus.com/embed.js;
+
+  style-src 'self' 'unsafe-inline' https://c.disquscdn.com;
+
+  prefetch-src 'self' https://c.disquscdn.com https://disqus.com;
+
+  img-src 'self' * blob: data:;
   media-src 'none';
   connect-src *;
   font-src 'self';
-  frame-src giscus.app
-`
+  frame-src https://disqus.com`
 
 const securityHeaders = [
   // https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP
   {
     key: 'Content-Security-Policy',
     value: ContentSecurityPolicy.replace(/\n/g, ''),
+  },
+  {
+    key: 'Access-Control-Allow-Origin',
+    value: '*',
   },
   // https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy
   {
