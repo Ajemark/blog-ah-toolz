@@ -7,10 +7,13 @@ import TOCInline from './TOCInline'
 import Pre from './Pre'
 import { BlogNewsletterForm } from './NewsletterForm'
 
+import NewsletterForm from '@/components/NewsletterForm'
+
 export const MDXComponents = {
   Image,
   TOCInline,
   a: CustomLink,
+NewsletterForm: NewsletterForm,
   pre: Pre,
   BlogNewsletterForm: BlogNewsletterForm,
   wrapper: ({ components, layout, ...rest }) => {
