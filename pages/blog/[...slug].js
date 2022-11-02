@@ -6,6 +6,8 @@ import { formatSlug, getAllFilesFrontMatter, getFileBySlug, getFiles } from '@/l
 
 const DEFAULT_LAYOUT = 'PostLayout'
 
+import NewsletterForm from '@/components/NewsletterForm'
+
 export async function getStaticPaths() {
   const posts = getFiles('blog')
   return {
